@@ -1,14 +1,14 @@
 class two_d_using_for_each_loop {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         int[][] a = {
-            {1,-2,3},
-            {-4,-5,6,9},
-            {7},
+                { 1, -2, 3 },
+                { -4, -5, 6, 9 },
+                { 7 },
         };
 
-        for (int i = 0; i<a.length;++i){
-            for (int j = 0; j<a[i].length;++j){
-                System.out.println(a[i][j]);
+        for (int[] innerArray : a) {
+            for (int data : innerArray) {
+                System.out.println(data);
             }
         }
     }
